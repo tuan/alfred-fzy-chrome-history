@@ -1,0 +1,34 @@
+{
+  "name": "alfred-fzy-chrome-history",
+  "version": "1.0.0",
+  "description": "Use FZY to search chrome's history",
+  "repository": "tuan/alfred-fzy-chrome-history",
+  "main": "index.js",
+  "exports": "./index.js",
+  "author": "Tuan Nguyen",
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy",
+    "fzy",
+    "chrome",
+    "browser",
+    "history",
+    "fuzzy",
+    "search"
+  ],
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "alfy": "^0.12.3",
+    "date-fns": "^2.28.0",
+    "fzy.js": "^0.4.1",
+    "lodash": "^4.17.21",
+    "sqlite": "^4.0.25",
+    "sqlite3": "^5.0.2"
+  }
+}
