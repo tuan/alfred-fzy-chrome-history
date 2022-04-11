@@ -36,6 +36,11 @@ const now = Date.now();
 
 const outputItems = results.slice(0, OUTPUT_LIMIT).map((item) => {
   const relativeVisitTime = formatRelative(new Date(item.visit_time), now);
+  const positions = fzy.positions(fzyQuery, item.title);
+  const context = item.title.substring(
+    positions[0],
+    positions[positions.length - 1] + 1
+  );
 
   return {
     quicklookurl: item.url,
@@ -48,6 +53,9 @@ const outputItems = results.slice(0, OUTPUT_LIMIT).map((item) => {
       ctrl: {
         arg: item.url,
         subtitle: `Copy & Paste ${item.url} `,
+      },
+      alt: {
+        subtitle: `Match: ${context}`,
       },
     },
   };

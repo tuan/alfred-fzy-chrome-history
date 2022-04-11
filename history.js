@@ -5,7 +5,7 @@ import { open } from "sqlite";
 // Script filter copies chrome History DB file to this location,
 // to get around permission issue
 const CHROME_HISTORY_DB_PATH = "/tmp/chrome-history.db";
-const DB_CACHE_KEY_PREFIX = "CACHED_FZF_INSTANCE";
+const DB_CACHE_KEY_PREFIX = "DB_CACHE_KEY_PREFIX";
 
 const db = await open({
   filename: CHROME_HISTORY_DB_PATH,

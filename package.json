@@ -1,6 +1,6 @@
 {
   "name": "alfred-fzy-chrome-history",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use FZY to search chrome's history",
   "repository": "tuan/alfred-fzy-chrome-history",
   "main": "index.js",
